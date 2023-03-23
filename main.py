@@ -8,16 +8,6 @@ def encoder(not_encoded):
         #add 3 to the different values in the string
         final += str(j)
     return final
-def decoder(encoded):
-    result = []
-    final = ""
-    for i in encoded:
-        result.append(int(i))
-    for i in result:
-        j = i - 3
-        #subtracts instead of add
-        final += str(j)
-    return final
 def main():
     while True:
         print("Menu\n-------------\n1. Encode\n2. Decode\n3. Quit")
